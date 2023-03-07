@@ -31,11 +31,11 @@ Secondary Color (Orange): #E0B354
 
 /* ROOT */
 :root {
-  /* --text-color: #2B2B2B; */
-  /* --primary-color: #357B70; */
-  /* --secondary-color: #E0B354; */
-  /* --visited-color: #05676E; */
-  /* --active-color: #489C79; */
+  --text-color: #2B2B2B;
+  --primary-color: #357B70;
+  --secondary-color: #E0B354;
+  --visited-color: #05676E;
+  --active-color: #489C79;
 }
 
 /* CLEARFIX */
