@@ -350,10 +350,24 @@ tbody tr td {
   .grid {
     grid-template-columns: 1fr;
   }
+  .form__area {
+    flex-direction: column;
+  }
+  .form__control {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .form__area {
+    flex-direction: column;
+  }
+  .form__control {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
