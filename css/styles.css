@@ -36,6 +36,7 @@ Secondary Color (Orange): #E0B354
   --visited-color: #75DDDD;
   --active-color: #508991;
   --faded-black-color: rgba(0,0,0,0.3);
+  --faded-white-color: rgba(238, 252, 248, 0.804);
 
   --orange-sun: #EDC655;
   --yellow-sun: #FCFFAD;
@@ -277,8 +278,19 @@ main {
   justify-content: center;
 }
 .skills-table__wrapper table {
-  width: 50%;
+  /* width: 50%; */
   margin: 0 auto;
+}
+thead {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+thead tr th {
+  padding: 0 25px;
+}
+tbody tr td {
+  background-color: var(--faded-white-color);
+  color: var(--secondary-color);
 }
 .about__hometown-container svg {
   max-width: 1200px;
