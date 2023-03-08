@@ -292,6 +292,9 @@ tbody tr td {
   background-color: var(--faded-white-color);
   color: var(--secondary-color);
 }
+.about__button-container {
+  margin: 15px 0;
+}
 .about__hometown-container svg {
   max-width: 1200px;
 }
