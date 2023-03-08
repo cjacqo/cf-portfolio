@@ -343,6 +343,7 @@ tbody tr td {
 .footer__social-links {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 @media all and (max-width: 500px) {
