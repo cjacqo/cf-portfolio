@@ -10,17 +10,9 @@ window.addEventListener('load', () => {
 window.addEventListener('resize', () => {
   windowWidth = window.innerWidth
   windowHeight = window.innerHeight
-  
 })
 
 navCheckBox.addEventListener('change', function() {
-  handleNavigation()
+  console.log('clicked')
+  console.log(windowWidth, windowHeight)
 })
-
-function handleNavigation() {
-  if (windowWidth >= 750) return
-
-  if (navCheckBox.getAttribute('checked') === true) {
-    
-  }
-}
