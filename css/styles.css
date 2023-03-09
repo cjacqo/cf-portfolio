@@ -89,6 +89,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* HEADINGS */
@@ -151,6 +152,7 @@ button:focus,
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
 .navigation-hamburger__container {
   position: relative;
@@ -380,7 +382,7 @@ tbody tr td {
 }
 @media all and (min-width: 500px) and (max-width: 749px) {
   .navigation__list {
-    display: none;
+    position: absolute;
   }
 
   .grid {
@@ -397,7 +399,16 @@ tbody tr td {
 
 @media all and (max-width: 750px) {
   .navigation__list {
-    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+  }
+  .navigation__list.hidden {
+    left: 100%;
+  }
+  .navigation__list.visible {
+    left: 50%;
   }
   
   .grid {
