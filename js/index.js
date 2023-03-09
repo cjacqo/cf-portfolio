@@ -1,12 +1,18 @@
-let windowHeight, windowWidth
+let windowWidth = window.innerWidth
+let windowHeight = window.innerHeight
 
 const navCheckBox = document.getElementById('navToggle')
 
-window.addEventListener('resize', () => {
-  windowHeight = window.innerHeight
-  windowWidth = window.innerWidth
+window.addEventListener('load', () => {
+  if (navCheckBox.getAttribute('checked') !== false) navCheckBox.checked = false
 })
 
-navCheckBox.addEventListener('onclick', () => {
-  console.log('hi')
+window.addEventListener('resize', () => {
+  windowWidth = window.innerWidth
+  windowHeight = window.innerHeight
+})
+
+navCheckBox.addEventListener('change', function() {
+  console.log('clicked')
+  console.log(windowWidth, windowHeight)
 })
