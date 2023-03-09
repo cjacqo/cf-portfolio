@@ -170,6 +170,7 @@ button:focus,
 
 /* NAVIGATION */
 .nav__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,6 +180,9 @@ button:focus,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.navigation__list {
+  position: absolute;
 }
 .navigation-list__item {
   padding: 0 10px;
