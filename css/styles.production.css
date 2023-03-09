@@ -97,6 +97,7 @@ h3 { font-size: 18px; }
 /* LISTS */
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 ul li {
@@ -485,6 +486,9 @@ tbody tr td {
 }
 
 @media all and (max-width: 500px) {
+  .navigation__list {
+    top: 100%;
+  }
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -501,6 +505,9 @@ tbody tr td {
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
+  .navigation__list {
+    top: 100%;
+  }
   .grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -518,6 +525,9 @@ tbody tr td {
 }
 
 @media all and (max-width: 750px) {
+  .navigation__list {
+    top: 100%;
+  }
   .grid {
     gap: 10px;
   }
