@@ -189,7 +189,7 @@ button:focus,
 
 /* PROFILE: Index.html */
 .profile__section {
-  min-width: 360px;
+  width: 360px;
   margin: 0 auto;
   display: flex;
   justify-content: center;

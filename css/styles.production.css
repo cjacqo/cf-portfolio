@@ -29,15 +29,6 @@ Secondary Color (Orange): #E0B354
           box-sizing: border-box;
 }
 
-/* ROOT */
-:root {
-  --text-color: #2B2B2B;
-  --primary-color: #357B70;
-  --secondary-color: #E0B354;
-  --visited-color: #05676E;
-  --active-color: #489C79;
-}
-
 /* CLEARFIX */
 .clear-fix {
   clear: both;
@@ -236,7 +227,7 @@ button:focus,
 
 /* PROFILE: Index.html */
 .profile__section {
-  min-width: 360px;
+  width: 360px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,6 +276,10 @@ button:focus,
 main {
   width: 95%;
   margin: 0 auto;
+}
+
+.main__home-page {
+  margin: 50px 0;
 }
 
 /* KEYFRAME ANIMATIONS */
@@ -367,7 +362,7 @@ main {
 }
 .about-me__wrapper,
 .skills-table__wrapper {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 .skills-table__wrapper {
@@ -383,8 +378,22 @@ main {
           justify-content: center;
 }
 .skills-table__wrapper table {
-  width: 50%;
+  /* width: 50%; */
   margin: 0 auto;
+}
+thead {
+  background-color: #EEFCF8;
+  color: #09BC8A;
+}
+thead tr th {
+  padding: 0 25px;
+}
+tbody tr td {
+  background-color: rgba(238, 252, 248, 0.804);
+  color: #004346;
+}
+.about__button-container {
+  margin: 15px 0;
 }
 .about__hometown-container svg {
   max-width: 1200px;
@@ -466,6 +475,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 10px;
 }
 
 @media all and (max-width: 500px) {
@@ -473,11 +483,31 @@ main {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+  .form__area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__control {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .form__area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__control {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
