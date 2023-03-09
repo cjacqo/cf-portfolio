@@ -257,12 +257,12 @@ button:focus,
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px;
   border-bottom: 1px solid rgba(0,0,0,0.3);
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
           box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 .header__item-wrapper {
+  padding: 20px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
