@@ -43,6 +43,10 @@ Secondary Color (Orange): #E0B354
   padding: 10px;
 }
 
+.grid__item--image img {
+  width: 100%;
+}
+
 /* GRID */
 .grid { display: -ms-grid; display: grid; }
 @supports (display: grid) {
