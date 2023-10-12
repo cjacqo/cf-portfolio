@@ -1,0 +1,142 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  width: 250px;
+  height: 100%;
+  @include nav-footer;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  grid-column: 1 / 2;
+  transition: width 0.5s;
+  z-index: 101;
+}
+.nav-bar::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: #FFF;
+}
+
+.nav-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-item {
+  width: 100%;
+  flex: 0 1 auto;
+  padding: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  color: $space-cadet;
+}
+
+.active {
+  // background-color: $eggshell;
+  background-color: $space-cadet;
+  width: 100%;
+  height: 47px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(45,48,71,0.4);
+  display: none;
+  transition: top 0.5s;
+}
+
+.nav-item:hover,
+.activePage {
+  color: $melon;
+  transition: 0.3s;
+}
+
+.nav-item:hover ~ .active,
+.activePage ~ .active {
+  display: block;
+}
+
+.nav-item:nth-child(1):hover ~ .active,
+.activePage:nth-child(1) ~ .active {
+  top: 0;
+}
+.nav-item:nth-child(2):hover ~ .active,
+.activePage:nth-child(2) ~ .active {
+  top: 25%;
+}
+.nav-item:nth-child(3):hover ~ .active,
+.activePage:nth-child(3) ~ .active {
+  top: 50%;
+}
+.nav-item:nth-child(4):hover ~ .active,
+.activePage:nth-child(4) ~ .active {
+  top: 75%;
+}
+
+#hamburger {
+  display: none;
+  padding: 0.1rem;
+  margin-left: 1rem;
+  font-size: 1.9rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#hamburger svg path {
+  fill: $space-cadet;
+}
+
+#hamburger svg:hover path {
+  fill: $melon;
+}
+
+@media (max-width: 1100px) {
+  .nav-bar {
+    width: 50px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-bar {
+    z-index: 103;
+  }
+
+  .nav-bar.mobile-active {
+    width: 250px;
+  }
+
+  .nav-bar.mobile-active .nav-list {
+    display: flex;
+    margin-top: 3rem;
+  }
+  
+  #hamburger {
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+}
+
+@keyframes moveNav {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 0;
+  }
+}

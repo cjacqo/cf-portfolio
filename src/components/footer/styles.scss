@@ -1,0 +1,38 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.footer--container {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  width: calc(100vw - 250px);
+  display: flex;
+  justify-content: center;
+  flex: 0;
+  padding: 2rem 0;
+  background-color: $space-cadet;
+  z-index: 102;
+}
+
+.svg-inline--fa {
+  height: 2rem;
+}
+
+.social {
+  margin: 0 1rem;
+}
+
+.social a svg path {
+  fill: $ivory;
+}
+
+.social a:hover svg path {
+  fill: $melon;
+}
+
+@media (max-width: 1100px) {
+  .footer--container {
+    left: 60px;
+    width: calc(100vw - 60px);
+  }
+}

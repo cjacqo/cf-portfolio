@@ -1,0 +1,38 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.contact-section--container {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+}
+
+.name--container,
+.email--container,
+.socials--container {
+  padding: 1rem 0;
+}
+
+.socials--container {
+  display: flex;
+  justify-content: center;
+}
+.socials--container a {
+  margin: 0 1rem;
+}
+.socials--container a svg path {
+  fill: $ivory;
+}
+.socials--container a:hover svg path {
+  fill: $melon;
+}
+
+@media (max-width: 684px) {
+  .email--container a {
+    font-size: 0.8rem;
+  }
+}
