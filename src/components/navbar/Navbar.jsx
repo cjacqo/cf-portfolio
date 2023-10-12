@@ -1,7 +1,7 @@
 import './styles.scss'
 import PropTypes from 'prop-types'
 import { useEffect, useRef, useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,7 +28,6 @@ const NavItem = ({ title, currentPage, setPage }) => {
 
 const Navbar = () => {
   let location = useLocation()
-  const navigate = useNavigate()
   const [page, setPage] = useState(location.pathname)
   const [navBarOpen, setNavBarOpen] = useState(false)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
