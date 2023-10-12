@@ -20,10 +20,10 @@ const ContactView = () => {
             <a href="https://github.com/cjacqo" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="#" target='_blank' rel="noreferrer">
+            <a href="https://twitter.com/cjacqo" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="#" target='_blank' rel="noreferrer">
+            <a href="https://www.linkedin.com/in/jayden-cipriano-527542217/" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
