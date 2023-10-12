@@ -1,22 +1,23 @@
 import './styles.scss'
 import PropTypes from 'prop-types'
-import { useContext, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const NavItem = ({ title, currentPage, setPage }) => {
   const linkTitle = title.replace(/^\w/, (c) => c.toUpperCase())
-  const linkTo = `/${title === 'home' ? '' : title}`
+  const linkTo = `/cf-portfolio/${title === 'home' ? '' : title}`
 
   const handleClick = () => {
     const page = title === 'home' ? '/' : '/' + title
     setPage(page)
+    console.log(linkTo)
   }
 
   return (
     <Link
-      className={`nav-item ${currentPage === '/' && title === 'home' ? 'activePage' : currentPage === '/' + title ? 'activePage' : ''}`}
+      className={`nav-item ${currentPage === '/cf-portfolio/' && title === 'home' ? 'activePage' : currentPage === '/cf-portfolio/' + title ? 'activePage' : ''}`}
       to={linkTo}
       onClick={handleClick}
       role='menuitem'>

@@ -14,10 +14,10 @@ const MainView = () => {
       <AppContainer>
         <Navbar />
         <Routes>
-          <Route path='/' element={<HomeView />} />
-          <Route path='/about' element={<AboutView />} />
-          <Route path='/work' element={<WorkView />} />
-          <Route path='/contact' element={<ContactView />} />
+          <Route path='/cf-portfolio' element={<HomeView />} />
+          <Route path='/cf-portfolio/about' element={<AboutView />} />
+          <Route path='/cf-portfolio/work' element={<WorkView />} />
+          <Route path='/cf-portfolio/contact' element={<ContactView />} />
         </Routes>
         <Footer />
       </AppContainer>
