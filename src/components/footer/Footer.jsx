@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className='footer--container'>
       <SocialContainer social={'github'} link={'https://github.com/cjacqo'} icon={faGithub} />
-      <SocialContainer social={'twitter'} link={'#'} icon={faTwitter} />
+      <SocialContainer social={'twitter'} link={'https://twitter.com/cjacqo'} icon={faTwitter} />
       <SocialContainer social={'linkedin'} link={'https://www.linkedin.com/in/jayden-cipriano-527542217/'} icon={faLinkedin} />
     </div>
   )
