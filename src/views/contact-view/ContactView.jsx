@@ -2,7 +2,7 @@ import './styles.scss'
 import { PageContainer, PageWrapper } from '../../components/container/Container'
 import PageTitle from '../../components/pagetitle/PageTitle'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
 
 const ContactView = () => {
   return (
@@ -25,6 +25,9 @@ const ContactView = () => {
             </a>
             <a href="https://www.linkedin.com/in/jayden-cipriano-527542217/" target='_blank' rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://medium.com/@contact.jayden.cipriano" target='_blank' rel="noreferrer">
+              <FontAwesomeIcon icon={faMedium} />
             </a>
           </div>
         </div>

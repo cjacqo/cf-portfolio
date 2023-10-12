@@ -1,7 +1,7 @@
 import './styles.scss'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
 
 const SocialContainer = ({ social, link, icon }) => {
   return (
@@ -19,6 +19,7 @@ const Footer = () => {
       <SocialContainer social={'github'} link={'https://github.com/cjacqo'} icon={faGithub} />
       <SocialContainer social={'twitter'} link={'https://twitter.com/cjacqo'} icon={faTwitter} />
       <SocialContainer social={'linkedin'} link={'https://www.linkedin.com/in/jayden-cipriano-527542217/'} icon={faLinkedin} />
+      <SocialContainer social={'medium'} link={'https://medium.com/@contact.jayden.cipriano'} icon={faMedium} />
     </div>
   )
 }
