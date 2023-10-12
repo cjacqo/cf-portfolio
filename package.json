@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://cjacqo.github.io/cf-portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
+    "postdeploy": "rm -rf dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
