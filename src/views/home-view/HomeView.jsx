@@ -16,7 +16,7 @@ const HomeView = () => {
           {/* <p>Fullstack Web Developer<br /><span className='slash'>/</span><br />Designer</p> */}
         </div>
         <div className='section__content-wrapper'>
-          <a className='work-button' href='/cf-portfolio/work'>See Work</a>
+          <a className='work-button' href='/work'>See Work</a>
         </div>
       </div>
     </PageContainer>
