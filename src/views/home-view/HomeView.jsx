@@ -1,4 +1,5 @@
 import './styles.scss'
+import { Link } from 'react-router-dom'
 import { PageContainer } from '../../components/container/Container'
 import Me from '../../assets/me/profile-photo.jpg'
 
@@ -16,7 +17,11 @@ const HomeView = () => {
           {/* <p>Fullstack Web Developer<br /><span className='slash'>/</span><br />Designer</p> */}
         </div>
         <div className='section__content-wrapper'>
-          <a className='work-button' href='https://cjacqo.github.io/cf-portfolio/work'>See Work</a>
+          <Link
+            className='work-button'
+            to={'/cf-portfolio/work'}>
+              See Work
+          </Link>
         </div>
       </div>
     </PageContainer>
